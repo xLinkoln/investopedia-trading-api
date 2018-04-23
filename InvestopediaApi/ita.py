@@ -344,4 +344,4 @@ def get_quote(symbol):
         quote = quote.replace(",", "")
     except:
         return False
-    return float(quote)
+    return float(quote.replace(',','')) #seems like above statement does not work
